@@ -24,7 +24,8 @@ app.get('/api/tournaments', (req, res) => {
     const raw = fs.readFileSync(dataFile, 'utf8');
     const tournaments = JSON.parse(raw);
     const arr = Array.isArray(tournaments) ? tournaments : (tournaments.tournaments || []);
-    res.json({ tournaments: arr, lastUpdated: new Date().toISOString() });
+            const normalized = arr.map(t => ({ ...t, startDate: t.startDate || t.date }));
+    res.json({ tournaments: normalized, lastUpdated: new Date().toISOString() });
   } catch (err) {
     console.error('Error reading tournaments.json:', err);
     res.status(500).json({ error: 'Could not load tournament data.' });
