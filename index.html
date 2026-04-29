@@ -208,7 +208,8 @@
 
     .day-cell {
       background: var(--surface);
-      min-height: 120px;
+      height: 140px;
+      overflow-y: auto;
       padding: 8px;
       position: relative;
     }
@@ -241,9 +242,7 @@
       cursor: pointer;
       margin-bottom: 3px;
       transition: opacity 0.15s;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+      white-space: normal;
       max-width: 100%;
     }
     .event-pill:hover { opacity: 0.8; }
@@ -703,7 +702,7 @@
       const MAX_VISIBLE = 3;
 
       let eventsHtml = events.slice(0, MAX_VISIBLE).map(t => `
-        <div class="event-pill tier-${t.tier}" onclick="openModal(${t.id})" title="${t.name}">
+        <div class="event-pill tier-${t.tier}" onclick="openModal('${t.id}')" title="${t.name}">
           <div class="dot"></div>
           <span>${t.name}</span>
         </div>
@@ -768,7 +767,7 @@
       g.events.forEach(t => {
         const d = new Date(t.startDate + 'T12:00:00');
         html += `
-          <div class="list-event-card" onclick="openModal(${t.id})">
+          <div class="list-event-card" onclick="openModal('${t.id}')">
             <div class="list-date-block">
               <div class="list-date-day">${d.getDate()}</div>
               <div class="list-date-month">${MONTHS[d.getMonth()].slice(0,3)}</div>
