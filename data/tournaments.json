@@ -7,7 +7,7 @@
     "city": "Pebble Beach",
     "state": "CA",
     "venue": "Pebble Beach Golf Links / Spyglass Hill / Monterey Peninsula CC",
-    "tier": "A",
+    "tier": "C",
     "type": "Pro-Am",
     "description": "Iconic PGA Tour pro-am pairing celebrities, CEOs, and athletes with Tour pros across three legendary Monterey Peninsula courses. Public spectator access with amateur participants playing alongside the best in the world.",
     "rsvpUrl": "https://www.attpbgolf.com/"
@@ -45,7 +45,7 @@
     "city": "The Woodlands",
     "state": "TX",
     "venue": "The Woodlands Country Club Tournament Course",
-    "tier": "A",
+    "tier": "C",
     "type": "Pro-Am (Spectator + Amateur Days)",
     "description": "PGA Tour Champions event presented by UnitedHealthcare. Pro-am days allow ticket holders access alongside tour legends. Signature charitable giving supporting Houston-area nonprofits. Purchase pro-am spots for the rare chance to play with Champions Tour greats.",
     "rsvpUrl": "https://www.insperityinvitational.com/"
@@ -157,7 +157,7 @@
     "city": "Madison",
     "state": "WI",
     "venue": "TPC Wisconsin",
-    "tier": "A",
+    "tier": "C",
     "type": "Pro-Am (Amateur Days Available)",
     "description": "PGA Tour Champions event at TPC Wisconsin hosted by Steve Stricker. Little Big Town headlines the 2026 concert. Has raised nearly $22M for American Family Children's Hospital. Pro-am days open to charity participants.",
     "rsvpUrl": "https://amfamchampionship.com/"
@@ -170,7 +170,7 @@
     "city": "St. Louis",
     "state": "MO",
     "venue": "Norwood Hills Country Club",
-    "tier": "A",
+    "tier": "C",
     "type": "Pro-Am (Amateur Days Available)",
     "description": "Charles Schwab Cup Playoff event at historic Norwood Hills Country Club. Pro-am days offer rare access alongside Champions Tour greats. A premier St. Louis fall tradition benefiting local charities.",
     "rsvpUrl": "https://www.stifelcharityclassic.com/"
@@ -320,5 +320,70 @@
     "type": "Charity",
     "description": "2nd annual St. Jude Oklahoma Golf Classic presented by Bob Moore Infiniti. Benefits St. Jude Children's Research Hospital. Rapidly growing as a premier Oklahoma charity golf event.",
     "rsvpUrl": "https://www.stjude.org/get-involved/find-an-event/dinners-and-galas/st-jude-oklahoma-golf-classic.html"
+  },
+  {
+    "id": "fl-003",
+    "name": "Derrick Brooks Celebrity Classic",
+    "date": "2026-04-27",
+    "endDate": "2026-04-27",
+    "city": "Tampa",
+    "state": "FL",
+    "venue": "Old Memorial Golf Club",
+    "tier": "S",
+    "type": "Celebrity Charity",
+    "description": "26th Annual Derrick Brooks Celebrity Classic at Old Memorial Golf Club in Tampa. Hall of Fame NFL linebacker Derrick Brooks hosts this premier event — celebrity Pro Bowl players and athletes join each team. Supports Derrick Brooks Charities youth programs. Teams of 3 amateurs plus 1 celebrity.",
+    "rsvpUrl": "https://db55.org/golf/"
+  },
+  {
+    "id": "co-001",
+    "name": "Pro Players Association Celebrity Classic",
+    "date": "2026-08-24",
+    "endDate": "2026-08-24",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "venue": "Flying Horse Resort and Club",
+    "tier": "S",
+    "type": "Celebrity Charity",
+    "description": "Annual Pro Players Association Celebrity Charity Golf Classic at the elite Flying Horse Resort in Colorado Springs. Each foursome is paired with a professional athlete or celebrity to form a fivesome. Open to the public — one of Colorado's premier charity golf experiences.",
+    "rsvpUrl": "https://proplayersassociation.org/tournament2026"
+  },
+  {
+    "id": "ma-001",
+    "name": "Sports Museum Celebrity Golf Classic",
+    "date": "2026-06-15",
+    "endDate": "2026-06-15",
+    "city": "Norton",
+    "state": "MA",
+    "venue": "Renaissance Golf Club",
+    "tier": "S",
+    "type": "Celebrity Charity",
+    "description": "41st Annual Celebrity Golf Classic hosted by The Sports Museum at the prestigious Renaissance Golf Club in Norton, MA. Every foursome is paired with a Boston sports legend — Celtics, Red Sox, Bruins, Patriots alumni. Sells out every year — one of New England's most coveted golf outings.",
+    "rsvpUrl": "https://www.sportsmuseum.org/events/celebrity-golf-classic/"
+  },
+  {
+    "id": "nv-001",
+    "name": "American Century Championship",
+    "date": "2026-07-08",
+    "endDate": "2026-07-12",
+    "city": "Stateline",
+    "state": "NV",
+    "venue": "Edgewood Tahoe Golf Course",
+    "tier": "A",
+    "type": "Celebrity Tournament",
+    "description": "The most prestigious celebrity golf tournament in the country, held at Edgewood Tahoe on the shores of Lake Tahoe. $750K purse. Features current and former pro athletes and entertainers competing on national TV. Spectator tickets available — incredible atmosphere.",
+    "rsvpUrl": "https://www.eventbrite.com/e/2026-american-century-celebrity-golf-tournament-at-edgewood-tahoe-tickets-1968312446513"
+  },
+  {
+    "id": "nv-002",
+    "name": "Las Vegas World Amateur",
+    "date": "2026-03-30",
+    "endDate": "2026-04-01",
+    "city": "Las Vegas",
+    "state": "NV",
+    "venue": "Multiple Las Vegas Courses",
+    "tier": "C",
+    "type": "Amateur Tournament",
+    "description": "Annual 3-day net golf competition open to amateurs of all skill levels at some of Vegas's best courses. Compete for thousands in prizes alongside players from around the world. Multiple flights and handicap divisions. One of the largest open amateur events in the country.",
+    "rsvpUrl": "https://vegasworldam.com/"
   }
 ]
