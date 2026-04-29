@@ -28,6 +28,11 @@
       --tier-b-border: #2a7a50;
       --tier-b-text: #5cc98a;
       --tier-b-dot: #4db87a;
+
+      --tier-c-bg: #1e1a2e;
+      --tier-c-border: #6b5b95;
+      --tier-c-text: #c9b8e8;
+      --tier-c-dot: #c9b8e8;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -260,6 +265,7 @@
     .tier-S .dot { background: var(--tier-s-dot); }
     .tier-A .dot { background: var(--tier-a-dot); }
     .tier-B .dot { background: var(--tier-b-dot); }
+    .tier-C .dot { background: var(--tier-c-dot); }
 
     .more-events {
       font-size: 10px;
@@ -541,9 +547,10 @@
     </select>
     <select id="tierFilter">
       <option value="all">All Tiers</option>
-      <option value="S">Tier S – Elite</option>
-      <option value="A">Tier A – Premium</option>
-      <option value="B">Tier B – Community</option>
+      <option value="S">Tier S – Celebrity & Big Org</option>
+      <option value="A">Tier A – Charity & State</option>
+      <option value="B">Tier B – Business & Club</option>
+      <option value="C">Tier C – Open Field</option>
     </select>
     <div class="view-toggle">
       <button class="view-btn active" id="calBtn" onclick="setView('calendar')">📅 Calendar</button>
@@ -556,15 +563,16 @@
 <div class="tier-legend">
   <div class="tier-badge">
     <span class="tier-pill tier-S">TIER S</span>
-    <span class="tier-desc">Elite – Celebrity-hosted, exclusive invitationals & pro-ams (playable access)</span>
+    <span class="tier-desc">Celebrity & Big Org – Open to the public to play</span>
   </div>
   <div class="tier-badge">
     <span class="tier-pill tier-A">TIER A</span>
-    <span class="tier-desc">Premium – Established charity events at private/premier clubs</span>
+    <span class="tier-desc">Charity &amp; State – Bigger charity and state golf tournaments</span>
   </div>
   <div class="tier-badge">
     <span class="tier-pill tier-B">TIER B</span>
-    <span class="tier-desc">Community – Open public charity events and local tournaments</span>
+    <span class="tier-desc">Business &amp; Club – Business, country club, and sports bettor tournaments</span>
+  <div class="legend-pill tier-C"><span class="dot"></span><strong>TIER C</strong> <span class="tier-desc">Open Field – Any open golf tournament or event</span></div>
   </div>
 </div>
 
@@ -817,7 +825,7 @@
       ? `${MONTHS[startD.getMonth()]} ${startD.getDate()} – ${endD.getDate()}, ${startD.getFullYear()}`
       : `${MONTHS[startD.getMonth()]} ${startD.getDate()}, ${startD.getFullYear()}`;
 
-    const tierLabels = { S: 'Elite · Tier S', A: 'Premium · Tier A', B: 'Community · Tier B' };
+    const tierLabels = { S: 'Celebrity & Big Org · Tier S', A: 'Charity & State · Tier A', B: 'Business & Club · Tier B', C: 'Open Field · Tier C' };
 
     const rsvpBtn = t.rsvpUrl
       ? `<a href="${t.rsvpUrl}" target="_blank" class="btn-rsvp">🎟️ RSVP / Register</a>`
