@@ -7,7 +7,7 @@
     "city": "Pebble Beach",
     "state": "CA",
     "venue": "Pebble Beach Golf Links / Spyglass Hill / Monterey Peninsula CC",
-    "tier": "S",
+    "tier": "A",
     "type": "Pro-Am",
     "description": "Iconic PGA Tour pro-am pairing celebrities, CEOs, and athletes with Tour pros across three legendary Monterey Peninsula courses. Public spectator access with amateur participants playing alongside the best in the world.",
     "rsvpUrl": "https://www.attpbgolf.com/"
@@ -182,7 +182,7 @@
     "city": "Prior Lake",
     "state": "MN",
     "venue": "Meadows at Mystic Lake",
-    "tier": "A",
+    "tier": "S",
     "type": "Celebrity Charity",
     "description": "Annual Minnesota Vikings Foundation fundraiser presented by Molson Coors. Play alongside Vikings legends and current players. Proceeds benefit Vikings Youth Football and community programs.",
     "rsvpUrl": "https://www.vikings.com/schedule/vikings-events/foundation-golf-tournament/"
@@ -280,7 +280,7 @@
     "city": "Montgomery",
     "state": "AL",
     "venue": "RTJ Golf Trail at Capitol Hill",
-    "tier": "S",
+    "tier": "A",
     "type": "Celebrity Charity",
     "description": "26th annual premier Alabama charity event. Banquet May 14 at Renaissance Montgomery Hotel with Coach Mike Krzyzewski as guest speaker. Tournament May 15. NFL and sports legends attend annually.",
     "rsvpUrl": "https://www.jimmyranefoundation.org/golf-tournament"
@@ -304,7 +304,7 @@
     "city": "Edmond",
     "state": "OK",
     "venue": "Oak Tree National Golf Course",
-    "tier": "A",
+    "tier": "S",
     "type": "Celebrity Charity",
     "description": "Annual charity tournament hosted by NBA guard Isaiah Joe. Celebrity athletes and community leaders participate in support of Oklahoma youth initiatives.",
     "rsvpUrl": "https://isaiahjoe.com/golf-tournament-info"
