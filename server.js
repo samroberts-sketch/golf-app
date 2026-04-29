@@ -22,8 +22,9 @@ app.use(express.static(__dirname));
 app.get('/api/tournaments', (req, res) => {
   try {
     const raw = fs.readFileSync(dataFile, 'utf8');
-    const data = JSON.parse(raw);
-    res.json(data);
+    const tournaments = JSON.parse(raw);
+    const arr = Array.isArray(tournaments) ? tournaments : (tournaments.tournaments || []);
+    res.json({ tournaments: arr, lastUpdated: new Date().toISOString() });
   } catch (err) {
     console.error('Error reading tournaments.json:', err);
     res.status(500).json({ error: 'Could not load tournament data.' });
