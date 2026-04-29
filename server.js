@@ -5,12 +5,27 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname)));
+// Debug on startup
+console.log('__dirname:', __dirname);
+console.log('Files in __dirname:', fs.readdirSync(__dirname));
 
+// Ensure data directory and tournaments.json exist
+const dataDir = path.join(__dirname, 'data');
+const dataFile = path.join(dataDir, 'tournaments.json');
+if (!fs.existsSync(dataDir)) {
+  fs.mkdirSync(dataDir, { recursive: true });
+}
+if (!fs.existsSync(dataFile)) {
+  fs.writeFileSync(dataFile, JSON.stringify([], null, 2));
+}
+
+// Serve static files
+app.use(express.static(__dirname));
+
+// API: tournaments
 app.get('/api/tournaments', (req, res) => {
   try {
-    const dataPath = path.join(__dirname, 'data', 'tournaments.json');
-    const raw = fs.readFileSync(dataPath, 'utf8');
+    const raw = fs.readFileSync(dataFile, 'utf8');
     const data = JSON.parse(raw);
     res.json(data);
   } catch (err) {
@@ -19,14 +34,34 @@ app.get('/api/tournaments', (req, res) => {
   }
 });
 
+// Health check
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
+// Root route
+app.get('/', (req, res) => {
+  const indexPath = path.join(__dirname, 'index.html');
+  console.log('Serving index from:', indexPath, 'exists:', fs.existsSync(indexPath));
+  res.sendFile(indexPath, (err) => {
+    if (err) {
+      console.error('sendFile error:', err);
+      res.status(500).send('Error: ' + err.message);
+    }
+  });
+});
+
+// Catch-all
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  const indexPath = path.join(__dirname, 'index.html');
+  res.sendFile(indexPath, (err) => {
+    if (err) {
+      console.error('sendFile error:', err);
+      res.status(500).send('Error: ' + err.message);
+    }
+  });
 });
 
 app.listen(PORT, () => {
-  console.log(`⛳ Golf Calendar running at http://localhost:${PORT}`);
+  console.log(`Golf Calendar running at http://localhost:${PORT}`);
 });
