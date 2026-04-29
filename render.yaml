@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: golf-tournament-calendar
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SERPER_API_KEY
+        sync: false
