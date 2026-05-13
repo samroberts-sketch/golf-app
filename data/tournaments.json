@@ -619,5 +619,70 @@
     "format": "4-Person Scramble",
     "description": "6th annual charity golf scramble at the scenic Arrowhead Golf Club benefiting 4 Paws 4 Life Rescue & Boarding, a Colorado animal rescue. Shotgun start at 2pm. Open foursome registration — a fun competitive day on a gorgeous course for animal lovers and the business community.",
     "rsvpUrl": "https://givebutter.com/4p4l-golf-scramble-2026"
+  },
+  {
+    "id": "in-001",
+    "name": "IU Northwest RedHawk Golf Classic",
+    "state": "IN",
+    "city": "Merrillville",
+    "venue": "Innsbrook Country Club",
+    "startDate": "2026-06-01",
+    "endDate": "2026-06-01",
+    "tier": "B",
+    "format": "4-Person Scramble",
+    "description": "3rd Annual RedHawk Golf Classic hosted by Indiana University Northwest Athletics. Open to the public at $900/foursome — supports IUN student-athlete scholarships. Shotgun start at 9:30am, meet coaches and RedHawks student-athletes, plus raffle prizes and on-course games. Registration deadline May 26.",
+    "rsvpUrl": "https://northwest.iu.edu/redhawk-classic/index.html"
+  },
+  {
+    "id": "mi-002",
+    "name": "NFL Alumni Detroit 47th Annual Charity Golf Classic",
+    "state": "MI",
+    "city": "South Lyon",
+    "venue": "Walnut Creek Country Club",
+    "startDate": "2026-06-08",
+    "endDate": "2026-06-08",
+    "tier": "S",
+    "format": "4-Person Scramble",
+    "description": "47th Annual NFL Alumni Detroit Charity Golf Classic at Walnut Creek Country Club. Play alongside NFL legends supporting student scholarships. Super Bowl of Golf Qualifier — the winning team earns a spot in the NFL Alumni national championship. Breakfast, cocktail reception, dinner, and silent auction included.",
+    "rsvpUrl": "https://givebutter.com/NFLADetroitGolfClassic"
+  },
+  {
+    "id": "oh-001",
+    "name": "Dean Martin Association Charity Golf Scramble",
+    "state": "OH",
+    "city": "Steubenville",
+    "venue": "Steubenville Country Club",
+    "startDate": "2026-06-19",
+    "endDate": "2026-06-19",
+    "tier": "A",
+    "format": "4-Person Scramble",
+    "description": "Annual charity golf scramble hosted by the Dean Martin Association in Steubenville, Ohio — hometown of the legendary entertainer. A beloved community tradition attracting golf lovers and Dino fans from across the tri-state region, raising funds for local charitable causes.",
+    "rsvpUrl": "https://ohio.golf/events/dean-martin-association-charity-golf-scramble/"
+  },
+  {
+    "id": "tn-002",
+    "name": "NFL Alumni Tennessee Charity Golf Classic",
+    "state": "TN",
+    "city": "Nashville",
+    "venue": "Gaylord Springs Golf Links",
+    "startDate": "2026-06-17",
+    "endDate": "2026-06-17",
+    "tier": "S",
+    "format": "5-Man Scramble with Celebrity Captain",
+    "description": "Annual NFL Alumni Tennessee charity scramble at the beautiful Gaylord Springs Golf Links. Each 4-person amateur team is joined by an NFL celebrity captain as their 5th player. Registration and lunch at 11am, shotgun start at 1pm. Benefits NFL Alumni community programs supporting former players and youth initiatives.",
+    "rsvpUrl": "https://www.nflalumnitn.org/nfl-alumni-charity-golf-classic/"
+  },
+  {
+    "id": "wa-001",
+    "name": "Mike Tice Foundation Celebrity Golf Event",
+    "state": "WA",
+    "city": "Kingston",
+    "venue": "White Horse Golf Club",
+    "startDate": "2026-07-13",
+    "endDate": "2026-07-13",
+    "tier": "S",
+    "format": "4-Person Scramble",
+    "description": "6th Annual Pacific Northwest celebrity golf fundraiser hosted by former NFL Head Coach Mike Tice. Every foursome is guaranteed a celebrity guest golfer — 33+ scheduled including Steve Largent, Warren Moon, and Rod Woodson. $3,500/foursome. Day 1: VIP dinner at Clearwater Casino Resort. Day 2: Golf scramble at White Horse Golf Club. Benefits Greater Seattle area youth charities.",
+    "rsvpUrl": "https://www.ticefoundation.org/"
   }
 ]
